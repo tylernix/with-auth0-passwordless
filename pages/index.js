@@ -1,18 +1,20 @@
 import Head from 'next/head'
+import Header from '../components/header'
+import Container from '../components/container'
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Auth0 Passwordless App</title>
       </Head>
+      <Header />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
+          Login without a password using{' '}
+          <a className="text-light-steel-blue" href="https://nextjs.org">
+            Auth0!
           </a>
         </h1>
 
@@ -68,13 +70,13 @@ export default function Home() {
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="flex items-center justify-center w-40"
+          href="https://auth0.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+          powered by{' '}
+          <img src="/assets/auth0-logo-black.png" alt="Auth0 Logo" className="h-4 ml-2" />
         </a>
       </footer>
     </div>
